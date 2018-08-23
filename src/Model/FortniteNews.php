@@ -8,6 +8,8 @@ class FortniteNews
     public $hidden = null;
     public $spotlight = null;
     public $title = null;
+    public $messageType = null;
+    public $adspace = null;
 
     /**
      * Constructs a new Fortnite\Model\FortniteNews instance.
@@ -32,6 +34,12 @@ class FortniteNews
                     break;
                 case "spotlight":
                     $this->spotlight = $value;
+                    break;
+                case "messagetype":
+                    $this->messageType = $value;
+                    break;
+                case "adspace":
+                    $this->adspace = $value;
                     break;
                 case "_type":
                     break;
